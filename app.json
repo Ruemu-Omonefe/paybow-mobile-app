@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Paybow",
+    "slug": "paybow",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FAF7F1",
+    "splash": { "image": "./assets/splash.png", "resizeMode": "contain", "backgroundColor": "#FAF7F1" },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "ng.paybow.app",
+      "infoPlist": { "NSCameraUsageDescription": "Paybow uses the camera to scan payment QR codes." }
+    },
+    "android": {
+      "package": "ng.paybow.app",
+      "adaptiveIcon": { "foregroundImage": "./assets/adaptive-icon.png", "backgroundColor": "#FAF7F1" },
+      "permissions": ["CAMERA"],
+      "usesCleartextTraffic": true
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-secure-store",
+      ["expo-camera", { "cameraPermission": "Paybow uses the camera to scan payment QR codes." }]
+    ]
+  }
+}
